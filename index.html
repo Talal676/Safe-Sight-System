@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Sight System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Safe Sight System</h1>
+    <p>AI-Powered Drone Safety and Inspection Platform</p>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#control">Drone Control</a>
+      <a href="#data">Data Visualization</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard">
+    <h2>Control Dashboard</h2>
+    <p>Real-time monitoring and control of drones and site safety.</p>
+    <div id="alert-box">
+      <h3>Incident Alerts</h3>
+      <ul id="incident-list">
+        <!-- Alerts will be populated here -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Drone Control Section -->
+  <section id="control">
+    <h2>Drone Control Panel</h2>
+    <p>Wearable-compatible interface for direct drone control.</p>
+    <button onclick="takeOff()">Take Off</button>
+    <button onclick="land()">Land</button>
+    <button onclick="emergencyStop()">Emergency Stop</button>
+  </section>
+
+  <!-- Data Visualization Section -->
+  <section id="data">
+    <h2>Data Visualization</h2>
+    <div id="visualization">
+      <!-- Real-time data will be visualized here -->
+      <canvas id="ppeComplianceChart"></canvas>
+      <canvas id="environmentalDataChart"></canvas>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Safe Sight System. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
